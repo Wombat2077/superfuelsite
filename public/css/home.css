@@ -1,0 +1,175 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  p, ul, ol, form, input, button {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Стили меню */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #4e4e4e;
+  }
+
+  /* Стили приветствия и описания */
+  #about {
+    background-color: #3232325f;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Стили преимуществ */
+  .c-stepper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-stepper__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.c-stepper__item:before {
+    --size: 3rem;
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    margin: 1rem auto 0;
+    background-color: #333; /* Цвет фона */
+}
+
+
+  /* Стили цепочки работы */
+  #workflow ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+
+  /* Стили формы для связи */
+/* CSS стили */
+.contact-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    margin-bottom: 10px;
+    text-align: left; /* Выравнивание текста слева */
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left; /* Выравнивание элементов по левому краю */
+  }
+
+  .input-group label {
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    width: 300px; /* Измените значение, чтобы задать нужную ширину */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #162016;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .product p {
+    margin: 0;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .order-button:hover {
+    background-color: #8f8e8e;
+  }
+

@@ -1,0 +1,213 @@
+/* Стили общего контейнера */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Стили шапки */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Стили секции "О нас" */
+  #about {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    line-height: 1.5;
+  }
+  
+  #about ul {
+    margin-top: 20px;
+  }
+  
+  #about ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Стили секции "Наша команда" */
+  #team {
+    padding: 40px 0;
+  }
+  
+  .member {
+    margin-bottom: 20px;
+  }
+  
+  .member h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  /* Стили секции "Контакты" */
+  #contact {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    line-height: 1.5;
+  }
+  
+  #contact ul {
+    margin-top: 20px;
+  }
+  
+  #contact ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Стили подвала */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Анимации */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    animation: fadeIn 1s;
+  }
+/* Стили секции "О нас" */
+#about {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    line-height: 1.5;
+    font-family: Arial, sans-serif; /* Пример использования шрифта */
+    color: #333; /* Цвет текста */
+    font-size: 18px; /* Размер текста */
+  }
+  
+  /* Стили секции "Наша команда" */
+  #team {
+    padding: 40px 0;
+  }
+  
+  .member {
+    margin-bottom: 20px;
+  }
+  
+  .member h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  /* Стилизация таблицы */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Стилизация сотрудников */
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .member-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  h3, p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Убрать рамки у ячеек таблицы */
+  table td, table th {
+    border: none;
+  }
+
+  /* Стили меню */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4e4e4e;
+  }
