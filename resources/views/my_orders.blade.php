@@ -19,12 +19,12 @@
             <td>{{$order->last_name}}</td>
             <td>{{$order->address}}</td>
             <td>
-                @if(is_array($order->products()))
+                @if(is_array($order->products()[0]))
                     @foreach ($order->products() as $product)
-                        {{ $product->name }},{{ "  " }}
+                        {{ $product[0]->name }}: {{ $product[1]}} у.е,{{ "  " }}
                     @endforeach
                 @else
-                    {{$order->products()->name}}
+                    {{$order->products()[0]->name}} {{$order->products()[0]}}у.е
                 @endif
             </td>
         </tr>

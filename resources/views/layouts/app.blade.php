@@ -127,5 +127,10 @@
 
 
       </footer>
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 Топливо и энергетика. Все права защищены.</p>
+        </div>
+      </footer>
 </body>
 </html>

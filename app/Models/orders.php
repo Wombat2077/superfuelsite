@@ -18,8 +18,11 @@ class Orders extends Model
         'summary_cost',
         'status'
     ];
+    function status(){
+        return Status_table::find($this->status);
+    }
     function user(){
-        return Users::find(this->user_id);
+        return User::find($this->user_id);
     }
     function products(){
         return Products::find(Products_orders::where('order_id', $this->id)->value("product_id"));

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\products;
+use Illuminate\Support\Facades\Auth;
+
 
 class HomeController extends Controller
 {
@@ -24,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $user = Auth::user();
+        if($user!= null & $user->is_admin){
+            return redirect('/admin');
+        }
         $products = Products::where('on_home', 1)->get();
         return view('home')->with('products', $products);
     }

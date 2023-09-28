@@ -57,23 +57,5 @@
 
 
 
-  <section id="contact">
-    <div class="container">
-      <h2>Контакты</h2>
-      <p>Вы можете связаться с нами по следующим контактным данным:</p>
-      <ul>
-        <li>Телефон: +7(800) - 55 - 35 - 35</li>
-        <li>Email: mail@Toplivo.su</li>
-        <li>Адрес: г. Москва, ул. Тверская, дом. 1</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Топливо и энергетика. Все права защищены.</p>
-    </div>
-  </footer>
-
   <script src="script.js"></script>
 @endsection

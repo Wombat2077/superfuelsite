@@ -1,8 +1,3 @@
-
-
-
-
-
 var myToastEl = document.getElementById('errorToast')
 function show_error_label(){
     alert(' Незарегистрированные пользователи не могут сделать заказ')
@@ -20,7 +15,7 @@ async function make_order(event){
     };
     data = JSON.stringify(data);
     let url = "http://127.0.0.1:5000/order";
-    try{
+
     axios({
         method: "POST",
         url : url,
@@ -43,15 +38,6 @@ async function make_order(event){
         } else {
             this.errorStatus = error.response.data.message;
         }
-         console.log(this.errorStatus)
-      });
-    }
-    catch(error){
-        if (!error.response) {
-            // network error
-            this.errorStatus = 'Error: Network Error';
-        } else {
-            this.errorStatus = error.response.data.message;
-        }
-      }
+            console.log(this.errorStatus)
+        });
 }

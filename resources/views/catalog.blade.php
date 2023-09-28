@@ -12,14 +12,6 @@
     <!-- Место для генерации товаров через JavaScript -->
   </div>
 
- <!-- поиск -->
- <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Поиск по названию товара" aria-label="Поиск по названию товара" aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Искать</button>
-</div>
-
-
-
 
   <!-- сам каталог -->
 @foreach ($products as $product)
@@ -39,7 +31,7 @@
 
       <x-modal>
         <x-slot name="id">
-            {{$product->id}}
+            Modal-form-{{$product->id}}
         </x-slot>
         <x-slot name="title">
             Заказ товара "{{ $product->name }}"
